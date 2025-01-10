@@ -1,0 +1,38 @@
+---
+layout: post
+title: MathJax setup
+mathjax: true
+---
+
+MathJax renders LaTeX to CSS/webfonts/SVG for high quality web-typography. Here's an inline equation,
+$$|\Phi^+\rangle = \frac{1}{\sqrt{2}} (|0\rangle_A \otimes |0\rangle_B + |1\rangle_A \otimes |1\rangle_B)$$, and here's a display-style equation:
+
+$$R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}.$$
+
+This post explains how to deploy MathJax within Jekyll. First, create `_includes/mathjax.html`:
+
+{% highlight html %}{% raw %}
+{% if page.mathjax %}
+<script type="text/javascript" async
+  src="https://cdnjs.clouwdflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+{% endif %}{% endraw %}
+{% endhighlight %}
+
+Then include MathJax in a layout. Create `_layouts/page.html`:
+
+{% highlight liquid %}{% raw %}
+---
+layout: default
+mathjax: true
+---
+{% include mathjax.html %}
+{{ content }}{% endraw %}
+{% endhighlight %}
+You can now use `{% raw %}$$[...]$${% endraw %}` for inline math and
+
+{% highlight tex%}{% raw %}
+$$[...]$${% endraw %}
+{% endhighlight %}
+
+for display-style math. That's it!
