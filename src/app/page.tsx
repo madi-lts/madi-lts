@@ -10,7 +10,7 @@ export default async function Home() {
       <div key={id}>
         <a href={`/blog/${id}`}>{id}</a>
       </div>
-    ));
+    ))
     }
   </div>
   );
