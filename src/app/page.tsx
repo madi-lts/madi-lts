@@ -1,20 +1,17 @@
-import {Post, getPosts } from "../lib/posts";
+import {getIds } from "@/lib/posts";
 
 export default async function Home() {
-  const posts = await getPosts();
+  const Ids: string[] = await getIds();
 
   return (
   <div>
-    <h1>madi-lts</h1>
-    <div>
-      {(posts).map((post: Post) => (
-        <div key={post.id}>
-          <h2>{post.title}</h2>
-          <p>{new Date(post.date).toLocaleDateString()}</p>
-          <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-        </div>
-      ))}
-    </div>
+    <h1 className="text-center">madi-lts</h1>
+    {Ids.map((id) => (
+      <div key={id}>
+        <a href={`/blog/${id}`}>{id}</a>
+      </div>
+    ))
+    };
   </div>
   );
 }
