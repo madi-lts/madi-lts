@@ -5,7 +5,7 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
   const postData: Post = await getPost(id)
   
   return (
-    <div className="bg-white dark:bg-black">
+    <div>
       <h1 className="text-center">{postData.title}</h1>
       <p >{new Date(postData.date).toLocaleDateString()}</p>
       <p dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
