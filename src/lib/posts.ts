@@ -3,6 +3,12 @@ import html from 'remark-html';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import rehypeSanitize from 'rehype-sanitize'
+import rehypeStringify from 'rehype-stringify'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import {unified} from 'unified'
+
 
 export interface Post {
     id: string;
@@ -22,8 +28,11 @@ export async function getPost(id: string): Promise<Post> {
     const title: string = matterResult.data.title;
 
     // Use remark to convert markdown into HTML string
-    const processedContent = await remark()
-        .use(html)
+    const processedContent = await unified()
+        .use(remarkParse)
+        .use(remarkRehype)
+        .use(rehypeSanitize)
+        .use(rehypeStringify)
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
 
