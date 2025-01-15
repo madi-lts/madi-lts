@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+// import type { NextConfig } from "next";
 import nextMDX from "@next/mdx";
 import rehypePrettyCode from "rehype-pretty-code";
 
@@ -8,7 +8,8 @@ import rehypePrettyCode from "rehype-pretty-code";
 
 /** @type {import('rehype-pretty-code').Options} */
 const options = {
-  // See Options section below.
+  theme: "material",
+  keepBackground: false,
 };
 
 const withMDX = nextMDX({

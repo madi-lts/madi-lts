@@ -1,5 +1,5 @@
-import { remark } from 'remark';
-import html from 'remark-html';
+// import { remark } from 'remark';
+// import html from 'remark-html';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -8,6 +8,7 @@ import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import {unified} from 'unified'
+import rehypePrettyCode from 'rehype-pretty-code';
 
 
 export interface Post {
@@ -35,6 +36,7 @@ export async function getPost(id: string): Promise<Post> {
         .use(remarkRehype)
         .use(rehypeSanitize)
         .use(rehypeStringify)
+        .use(rehypePrettyCode)
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
 
@@ -69,8 +71,12 @@ export async function getPosts(): Promise<Post[]> {
         
         const unprocessedContent: string = matterResult.content;
         // Use remark to convert markdown into HTML string
-        const processedContent = await remark()
-            .use(html)
+        const processedContent = await unified()
+            .use(remarkParse)
+            .use(remarkRehype)
+            .use(rehypeSanitize)
+            .use(rehypeStringify)
+            .use(rehypePrettyCode)
             .process(matterResult.content);
         const contentHtml = processedContent.toString();
 
