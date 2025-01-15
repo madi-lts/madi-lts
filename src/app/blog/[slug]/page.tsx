@@ -5,10 +5,10 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
   const postData: Post = await getPost(id)
   
   return (
-    <div>
+    <article className="prose lg:prose-xl">
       <h1 className="text-center">{postData.title}</h1>
       <p >{new Date(postData.date).toLocaleDateString()}</p>
       <p dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </div>
+    </article>
   );
 }
