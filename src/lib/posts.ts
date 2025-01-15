@@ -8,6 +8,7 @@ export interface Post {
     id: string;
     date: string;
     title: string;
+    unprocessedContent: string;
     contentHtml: string;
 }
 
@@ -21,6 +22,7 @@ export async function getPost(id: string): Promise<Post> {
     const date: string = matterResult.data.date;
     const title: string = matterResult.data.title;
 
+    const unprocessedContent: string = matterResult.content;
     // Use remark to convert markdown into HTML string
     const processedContent = await remark()
         .use(html)
@@ -32,6 +34,7 @@ export async function getPost(id: string): Promise<Post> {
         id,
         date,
         title,
+        unprocessedContent,
         contentHtml,
     };
 }
@@ -54,7 +57,8 @@ export async function getPosts(): Promise<Post[]> {
         const matterResult = matter(fileContents);
         const date: string = matterResult.data.date;
         const title: string = matterResult.data.title;
-
+        
+        const unprocessedContent: string = matterResult.content;
         // Use remark to convert markdown into HTML string
         const processedContent = await remark()
             .use(html)
@@ -66,6 +70,7 @@ export async function getPosts(): Promise<Post[]> {
             id,
             date,
             title,
+            unprocessedContent,
             contentHtml,
         };
     }));
