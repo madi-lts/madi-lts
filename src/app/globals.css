@@ -5,9 +5,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
-  background-color: #000000;
-  margin-left: 25%;
-  margin-right: 25%;
+  background-color: #161616;
+  heading-color: #acacac;
+  subheading-color: #acacac;
+  subsubheading-color: #acacac;
+  link-color: #acacac;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
   padding: 10px;
 }
 
