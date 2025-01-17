@@ -9,7 +9,7 @@ import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import {unified} from 'unified'
 import rehypePrettyCode from 'rehype-pretty-code';
-
+import rehypeAddClasses from 'rehype-add-classes';
 
 export interface Post {
     id: string;
@@ -37,9 +37,12 @@ export async function getPost(id: string): Promise<Post> {
         .use(rehypeSanitize)
         .use(rehypeStringify)
         .use(rehypePrettyCode)
+        .use(rehypeAddClasses, { '*': 'custom-class' })
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
 
+    console.log(contentHtml);
+    
     // Combine the data with the id
     return {
         id,
@@ -77,6 +80,7 @@ export async function getPosts(): Promise<Post[]> {
             .use(rehypeSanitize)
             .use(rehypeStringify)
             .use(rehypePrettyCode)
+            .use(rehypeAddClasses, { '*': 'custom-class' })
             .process(matterResult.content);
         const contentHtml = processedContent.toString();
 

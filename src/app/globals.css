@@ -4,15 +4,11 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
-  background-color: #161616;
-  heading-color: #acacac;
-  subheading-color: #acacac;
-  subsubheading-color: #acacac;
-  link-color: #acacac;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 90%;
-  padding: 10px;
+  @apply bg-zinc-900; /* Using extended colors */
+  @apply text-zinc-50; /* Using extended colors */
 }
 
+.custom-class {
+  @apply text-zinc-50; /* Custom text color */
+  @apply bg-zinc-900; /* Custom background color */
+}

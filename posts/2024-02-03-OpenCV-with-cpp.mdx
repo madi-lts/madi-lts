@@ -58,14 +58,16 @@ nvcc -c cuda_code.cu
 ```
 This will generate `cuda_code.o`, which we can then link using `g++`:
 ```
-g++ -o program `pkg-config --cflags opencv4` `pkg-config --libs opencv4 cuda cudart` cuda_code.o main.cpp  
+g++ -o program `pkg-config --cflags opencv4` `pkg-config \
+    --libs opencv4 cuda cudart` cuda_code.o main.cpp  
 ```
 To streamline the build process, use Make. Create a file named `makefile`:
 ```make
 all: program
 
 program: cuda_code.o
-    g++ -o program `pkg-config --cflags opencv4` `pkg-config --libs opencv4 cuda cudart` cuda_code.o main.cpp -I.
+    g++ -o program `pkg-config --cflags opencv4` `pkg-config \
+        --libs opencv4 cuda cudart` cuda_code.o main.cpp -I.
 
 cuda_code.o:
     nvcc -c cuda_code.cu
