@@ -8,7 +8,7 @@ tags: c++, opencv, CUDA
 ---
 
 First install `opencv`. On arch linux, you may also need to install `vtk`, `glew`, and `fmt`. You also need `qt6-base`, `hdf5`, and possibly more! Scan the output of `ld` the see what dependencies are missing. To compile and link a program:
-```
+```bash
 g++ main.cpp `pkg-config --cflags opencv4` `pkg-config --libs opencv4` 
 ```
 For a first program, let's display an 8-bit monochrome image of white noise:
@@ -49,15 +49,15 @@ Note that the controls above allow us to pan, zoom, save, and copy the image to 
 
 ## Building CPU and CUDA code with Make
 To integrate OpenCV with CUDA code, we could use the `nvcc` compiler and pass the same options as before:
-```
+```bash
 nvcc main.cu `pkg-config --cflags opencv4` `pkg-config --libs opencv4`
 ```
 But since we also have a large amount of CPU only code, the proper way to develop here is to compile the CUDA code with `nvcc` into a library:
-```
+```bash
 nvcc -c cuda_code.cu
 ```
 This will generate `cuda_code.o`, which we can then link using `g++`:
-```
+```bash
 g++ -o program `pkg-config --cflags opencv4` `pkg-config \
     --libs opencv4 cuda cudart` cuda_code.o main.cpp  
 ```
