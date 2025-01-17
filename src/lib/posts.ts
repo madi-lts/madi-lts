@@ -41,8 +41,8 @@ export async function getPost(id: string): Promise<Post> {
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
 
-    console.log(contentHtml);
-    
+    // console.log(contentHtml);
+
     // Combine the data with the id
     return {
         id,

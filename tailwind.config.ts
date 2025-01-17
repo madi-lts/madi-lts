@@ -14,12 +14,12 @@ function defineConfig(): Config {
 				typography: (theme: any) => ({
 					DEFAULT: {
 						css: {
-							maxWidth: '85ch', // Set the max width for the entire typography
+							maxWidth: '75ch', // Set the max width for the entire typography
 							'h1, h2, h3, h4, h5, h6': {
-							maxWidth: '85ch', // Set the max width for headers
+								maxWidth: '75ch', // Set the max width for headers
 							},
 							p: {
-							maxWidth: '85sch', // Set the max width for paragraphs
+								maxWidth: '75sch', // Set the max width for paragraphs
 							},
 							// Add more customizations as needed
 						},

@@ -9,7 +9,8 @@ tags: c++, opencv, CUDA
 
 First install `opencv`. On arch linux, you may also need to install `vtk`, `glew`, and `fmt`. You also need `qt6-base`, `hdf5`, and possibly more! Scan the output of `ld` the see what dependencies are missing. To compile and link a program:
 ```bash
-g++ main.cpp `pkg-config --cflags opencv4` `pkg-config --libs opencv4` 
+g++ main.cpp `pkg-config --cflags opencv4` \
+    `pkg-config --libs opencv4` 
 ```
 For a first program, let's display an 8-bit monochrome image of white noise:
 
