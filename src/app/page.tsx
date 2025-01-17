@@ -5,7 +5,7 @@ export default async function Home() {
 
   return (
   <div>
-    <h1 className="text-center text-2xl">madi-lts</h1>
+    <h1 className="text-center text-3xl font-bold">madi-lts</h1>
     {Ids.map((id) => (
       <div key={id}>
         <a href={`/blog/${id}`}>{id}</a>
