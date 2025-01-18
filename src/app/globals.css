@@ -19,6 +19,20 @@ body {
   @apply text-zinc-100; 
 }
 
+/* Ensure inline math is displayed inline */
+.math-inline {
+  display: inline !important;
+  float: none !important;
+  position: static !important;
+}
+
+/* Ensure display math is displayed as block */
+.math-display {
+  display: block !important;
+  text-align: center !important;
+  margin: 1em 0;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     font-family: sans-serif;
