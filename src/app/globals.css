@@ -19,7 +19,7 @@ body {
   @apply text-zinc-100; 
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     font-family: sans-serif;
     @apply bg-zinc-900;
