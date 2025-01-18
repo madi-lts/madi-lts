@@ -15,6 +15,7 @@ export interface Post {
     id: string;
     date: string;
     title: string;
+    abstract: string;
     unprocessedContent: string;
     contentHtml: string;
 }
@@ -28,6 +29,7 @@ export async function getPost(id: string): Promise<Post> {
     const matterResult = matter(fileContents);
     const date: string = matterResult.data.date;
     const title: string = matterResult.data.title;
+    const abstract: string = matterResult.data.abstract;
 
 
     const unprocessedContent: string = matterResult.content;
@@ -37,7 +39,7 @@ export async function getPost(id: string): Promise<Post> {
         .use(remarkRehype)
         .use(rehypeSanitize)
         .use(rehypeStringify)
-        .use(rehypePrettyCode)
+        .use(rehypePrettyCode, { theme: 'dracula', keepBackground: true })
         .use(rehypeAddClasses, { '*': 'custom-class' })
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
@@ -49,6 +51,7 @@ export async function getPost(id: string): Promise<Post> {
         id,
         date,
         title,
+        abstract,
         unprocessedContent,
         contentHtml
     };
