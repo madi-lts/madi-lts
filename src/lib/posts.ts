@@ -19,8 +19,8 @@ export interface Post {
     contentHtml: string;
 }
 
-
 export async function getPost(id: string): Promise<Post> {
+
     const fullPath = path.join(process.cwd(), 'posts', `${id}.mdx`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -28,6 +28,7 @@ export async function getPost(id: string): Promise<Post> {
     const matterResult = matter(fileContents);
     const date: string = matterResult.data.date;
     const title: string = matterResult.data.title;
+
 
     const unprocessedContent: string = matterResult.content;
     // Use remark to convert markdown into HTML string
@@ -49,7 +50,7 @@ export async function getPost(id: string): Promise<Post> {
         date,
         title,
         unprocessedContent,
-        contentHtml,
+        contentHtml
     };
 }
 
@@ -58,41 +59,14 @@ export async function getIds(): Promise<string[]> {
     return fileNames.map((fileName: string) => fileName.replace(/\.mdx$/, ''));
 }
 
+
 export async function getPosts(): Promise<Post[]> {
     // Get file names under /posts
-    const fileNames = await getIds();
-    const allPostsData = await Promise.all((await fileNames).map(async (fileName: string) => {
-        // Remove ".mdx" from file name to get id
-        const id: string = fileName.replace(/\.mdx$/, '');
-        const fullPath = path.join(process.cwd(),'/posts/', `${id}.mdx`);
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
-
-        // Use gray-matter to parse the post metadata section
-        const matterResult = matter(fileContents);
-        const date: string = matterResult.data.date;
-        const title: string = matterResult.data.title;
-        
-        const unprocessedContent: string = matterResult.content;
-        // Use remark to convert markdown into HTML string
-        const processedContent = await unified()
-            .use(remarkParse)
-            .use(remarkRehype)
-            .use(rehypeSanitize)
-            .use(rehypeStringify)
-            .use(rehypePrettyCode)
-            .use(rehypeAddClasses, { '*': 'custom-class' })
-            .process(matterResult.content);
-        const contentHtml = processedContent.toString();
-
-        // Combine the data with the id
-        return {
-            id,
-            date,
-            title,
-            unprocessedContent,
-            contentHtml,
-        };
+    const ids = await getIds();
+    const allPostsData = await Promise.all((await ids).map(async (id: string) => {
+        return await getPost(id);
     }));
+
     // Sort posts by date
     return allPostsData.sort((a, b) => {
         if (a.date < b.date) {
