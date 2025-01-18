@@ -18,3 +18,9 @@ body {
 .post {
   @apply text-zinc-100; 
 }
+
+@media (max-width: 768px) {
+  body {
+    margin: 2rem;
+  }
+}
