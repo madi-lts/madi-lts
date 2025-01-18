@@ -75,8 +75,6 @@ export async function getPost(id: string): Promise<Post> {
         .use(rehypePrettyCode, { theme: 'dracula', keepBackground: true })
         .use(rehypeAddClasses, { 
             '*': ['prose', 'prose-zinc', 'post', 'sm:prose', 'sm:prose-zinc', 'sm:post'],
-            'mjx-container': 'math-inline',
-            'mjx-container[display="true"]': 'math-display',
         })
         .use(rehypeStringify)
         .process(matterResult.content);
