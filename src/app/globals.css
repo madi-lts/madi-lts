@@ -17,6 +17,9 @@ body {
 
 .post {
   @apply text-zinc-100; 
+  @apply prose;
+  @apply prose-zinc;
+  @apply dark:prose-invert;
 }
 
 @media only screen and (max-width: 768px) {
