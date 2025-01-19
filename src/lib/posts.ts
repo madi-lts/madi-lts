@@ -52,6 +52,32 @@ export interface Post {
 //     }
 // };
 
+export async function markdownToHtml(markdownContent: string): Promise<string> {
+    const file = await unified()
+    .use(remarkParse)
+    .use(remarkMath)
+    .use(remarkRehype)
+    .use(rehypeSanitize)
+    .use(rehypeMathjax, {
+    //   tex: {
+    //     inlineMath: [['$', '$']],
+    //     displayMath: [['$$', '$$']],
+    //   },
+      chtml: {
+        displayAlign: 'center',
+        fontURL: 'https://cdn.jsdelivr.net/npm/noto-sans-math@latest/fonts/woff2',
+      },
+    })
+    .use(rehypePrettyCode, { theme: 'dracula', keepBackground: true })
+    .use(rehypeAddClasses, { 
+        'math-display': ['center-math'],
+    })
+    .use(rehypeStringify)
+    .process(markdownContent);
+
+  return String(file);
+}
+
 export async function getPost(id: string): Promise<Post> {
 
     const fullPath = path.join(process.cwd(), 'posts', `${id}.mdx`);
@@ -66,18 +92,7 @@ export async function getPost(id: string): Promise<Post> {
 
     const unprocessedContent: string = matterResult.content;
     // Use remark to convert markdown into HTML string
-    const processedContent = await unified()
-        .use(remarkParse)
-        .use(remarkMath)
-        .use(remarkRehype)
-        .use(rehypeSanitize)
-        .use(rehypeMathjax)
-        .use(rehypePrettyCode, { theme: 'dracula', keepBackground: true })
-        .use(rehypeAddClasses, { 
-            '*': ['prose', 'prose-zinc', 'post', 'sm:prose', 'sm:prose-zinc', 'sm:post'],
-        })
-        .use(rehypeStringify)
-        .process(matterResult.content);
+    const processedContent = await markdownToHtml(unprocessedContent);
     const contentHtml = processedContent.toString();
     
     // console.log(contentHtml);
