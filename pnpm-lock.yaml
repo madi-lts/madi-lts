@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@next/mdx':
         specifier: ^15.1.4
-        version: 15.1.4
+        version: 15.5.0
       '@tailwindcss/typography':
         specifier: ^0.5.16
         version: 0.5.16(tailwindcss@3.4.17)
