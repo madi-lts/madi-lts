@@ -68,7 +68,7 @@ export async function markdownToHtml(markdownContent: string): Promise<string> {
         fontURL: 'https://cdn.jsdelivr.net/npm/noto-sans-math@latest/fonts/woff2',
       },
     })
-    .use(rehypePrettyCode, { theme: 'dracula', keepBackground: true })
+    .use(rehypePrettyCode, { theme: 'catppuccin-latte', keepBackground: true })
     .use(rehypeAddClasses, { 
         'math-display': ['center-math'],
     })

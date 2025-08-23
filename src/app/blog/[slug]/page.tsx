@@ -19,7 +19,7 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
         <h1>{postData.title}</h1>
         <h2>{new Date(postData.date).toLocaleDateString(
           'en-US', {month: 'long', day: 'numeric', year: 'numeric' })}</h2>
-        <p dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </>
   );
