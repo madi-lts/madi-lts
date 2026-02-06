@@ -14,7 +14,6 @@ export default async function Home() {
 
   return (
   <div>
-    <h1 className="text-center text-4xl">madi-lts</h1>
     {posts.map((post) => (
       <div key={post.id} className="mt-2">
         <Card key={post.id}>
