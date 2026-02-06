@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/Sidebar";
+import { getPosts } from "@/lib/posts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,17 +19,25 @@ export const metadata: Metadata = {
   description: "A place for thoughts and projects.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const posts = await getPosts();
+  const sidebarPosts = posts.map(({ id, title }) => ({ id, title }));
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex min-h-screen mx-auto max-w-6xl py-8 px-6">
+          <Sidebar posts={sidebarPosts} />
+          <main className="flex-1 min-w-0 pl-8">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );

@@ -1,29 +1,7 @@
-// import type { NextConfig } from "next";
-import nextMDX from "@next/mdx";
-import rehypePrettyCode from "rehype-pretty-code";
+import type { NextConfig } from "next";
 
-// const nextConfig: NextConfig = {
-//   /* config options here */
-// };
-
-/** @type {import('rehype-pretty-code').Options} */
-const options = {
-  theme: "dracula",
-  keepBackground: false,
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
 };
 
-const withMDX = nextMDX({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [[rehypePrettyCode, options]],
-  },
-});
-
-
-
-const nextConfig = { reactStrictMode: true };
-
-export default withMDX(nextConfig);
-
-// export default nextConfig;
+export default nextConfig;
