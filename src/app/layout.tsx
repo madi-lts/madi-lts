@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import AlchemicalSeal from "@/components/AlchemicalSeal";
 import { getPosts } from "@/lib/posts";
 
 const geistSans = Geist({
@@ -32,6 +33,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <AlchemicalSeal />
         <div className="flex min-h-screen mx-auto max-w-6xl py-8 px-6">
           <Sidebar posts={sidebarPosts} />
           <main className="flex-1 min-w-0 pl-8">
