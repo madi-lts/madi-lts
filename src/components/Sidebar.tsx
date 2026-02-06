@@ -7,8 +7,8 @@ interface SidebarPost {
 
 export default function Sidebar({ posts }: { posts: SidebarPost[] }) {
   return (
-    <aside className="sidebar w-56 shrink-0 sticky top-8 self-start pr-8 border-r border-zinc-200">
-      <Link href="/" className="block text-xl font-semibold mb-6 text-zinc-900 no-underline">
+    <aside className="sidebar w-56 shrink-0 sticky top-8 self-start pr-8 border-r border-slate-700">
+      <Link href="/" className="block text-xl font-semibold mb-6 text-white no-underline">
         madi-lts
       </Link>
       <nav>
@@ -17,7 +17,7 @@ export default function Sidebar({ posts }: { posts: SidebarPost[] }) {
             <li key={post.id}>
               <Link
                 href={`/blog/${post.id}`}
-                className="text-sm text-zinc-600 hover:text-zinc-900 no-underline"
+                className="text-sm text-slate-400 hover:text-white no-underline"
               >
                 {post.title}
               </Link>

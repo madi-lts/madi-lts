@@ -19,7 +19,7 @@ export default async function Home() {
         <Card key={post.id}>
           <CardHeader>
             <CardTitle>
-              <a href={`/blog/${post.id}`} className="underline">{post.title}</a>
+              <a href={`/blog/${post.id}`} className="underline text-white">{post.title}</a>
             </CardTitle>
             <CardDescription>
               {new Date(post.date).toLocaleDateString(
