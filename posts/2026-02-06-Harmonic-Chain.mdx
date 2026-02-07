@@ -1,0 +1,29 @@
+---
+layout: post
+title: Classical motion of a harmonically confined chain
+date: 2026-02-06
+abstract:
+category: physics
+mathjax: true
+tags: classical mechanics
+---
+
+Consider a chain of $N$ ions in a harmonic potential. We assume that the system is in an equilibrium configuration where the ions have positions $\vec{r}_{0,i} + \vec{r}_i$, where $\vec{r}_i = (x_i,y_i,z_i)$. The external potential energy of the $i$th ion is then
+
+$$
+U_i(\vec{r}_i) = \frac{1}{2}m(\omega_x^2x_i^2 + \omega_y^2y_i^2 + \omega_z^2z_i^2)
+$$
+
+And the potential energy of the electrostatic interaction between the $i$th and $j$th ions is
+
+$$
+V_{ij}(|\vec{r}_i-\vec{r}_j|) = k_{e}e^2\frac{1}{|\vec{r}_i-\vec{r}_j|}
+$$
+
+So the entire potential energy for the system is 
+
+$$
+\sum_i U_i(\vec{r}_i) + k_ee^2\sum_{i<j}\frac{1}{|\vec{r}_i-\vec{r}_j|}
+$$
+
+ Taylor expanding $1/|\vec{r}_i-\vec{r}_j|$ about the equilibrium point we define the difference between the $i$th and $j$th equilibrium positions as $|\vec{r}_{0,i} - \vec{r}_{0,j}| \equiv r_{ij}$.

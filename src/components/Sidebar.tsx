@@ -7,7 +7,7 @@ interface SidebarPost {
 
 export default function Sidebar({ posts }: { posts: SidebarPost[] }) {
   return (
-    <aside className="sidebar w-56 shrink-0 sticky top-8 self-start pr-8 border-r border-stone-700">
+    <aside className="sidebar w-56 shrink-0 sticky top-8 self-start pr-8 border-r border-stone-700 font-[family-name:var(--font-lora)] italic">
       <Link href="/" className="block text-xl font-semibold mb-6 text-white no-underline">
         madi-lts
       </Link>

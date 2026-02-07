@@ -16,37 +16,53 @@ A human can easily make a qualitative judgement and draw a line (or a plane) sep
 
 A plane may be specified by a normal unit vector $\hat{\mathbf{n}}$ and a point $\mathbf{p}$. Every point $\mathbf{r}$ in the plane satisfies
 
-\\[\hat{\mathbf{n}}\cdot(\mathbf{r}-\mathbf{p}) = 0.\\]
+$$
+\hat{\mathbf{n}}\cdot(\mathbf{r}-\mathbf{p}) = 0.
+$$
 
 Since there are infinite choices for $\mathbf{p}$, and $\mathbf{r}$ is arbitrary, $(\mathbf{r}-\mathbf{p})$ could be any vector in the plane, and then this simply says that any vector lying in the plane must be perpendicular to $\hat{\mathbf{n}}$. But most importantly for points to one side of the plane, we have
 
-\\[\hat{\mathbf{n}}\cdot(\mathbf{r}-\mathbf{p}) > 0,\\]
+$$
+\hat{\mathbf{n}}\cdot(\mathbf{r}-\mathbf{p}) > 0,
+$$
 
 and to the other side we have
 
-\\[\hat{\mathbf{n}}\cdot(\mathbf{r}-\mathbf{p}) < 0.\\]
+$$
+\hat{\mathbf{n}}\cdot(\mathbf{r}-\mathbf{p}) < 0.
+$$
 
 This behavior is just what we want to plug into some approximately binary function and model the classification problem. A good choice for a smooth approximately binary model is the logistic function:
 
-\\[h(z) = \frac{1}{1+e^{-z}}.\\]
+$$
+h(z) = \frac{1}{1+e^{-z}}.
+$$
 
 Over most of the real line this function is approximately 0 (at $z\to -\infty$) or 1 (as $z\to + \infty$) and it "turns on" in the region near $z=0$. If we let
 
-\\[z(\mathbf{r}) = \hat{\mathbf{n}}\cdot(\mathbf{r}-\mathbf{p}),\\]
+$$
+z(\mathbf{r}) = \hat{\mathbf{n}}\cdot(\mathbf{r}-\mathbf{p}),
+$$
 
 then we see that $h(z(\mathbf{r}))$ will be approximately 0 to one side of the plane and 1 to the other.
 
 Since we don't know *a priori* what $\hat{\mathbf{n}}$ or $\mathbf{p}$ should be (at least not without doing the computer's job), we may as well call $-\hat{\mathbf{n}}\cdot\mathbf{p} = \beta_0$. With these definitions
 
-\\[\hat{\mathbf{n}}\cdot(\mathbf{r}-\mathbf{p}) = \hat{\mathbf{n}}\cdot\mathbf{r}+\beta_0,\\]
+$$
+\hat{\mathbf{n}}\cdot(\mathbf{r}-\mathbf{p}) = \hat{\mathbf{n}}\cdot\mathbf{r}+\beta_0,
+$$
 
 we see that the appropriate classifying function is
 
-\\[h(z) = \frac{1}{1+e^{-\hat{\mathbf{n}}\cdot\mathbf{r}-\beta_0}}.\\]
+$$
+h(z) = \frac{1}{1+e^{-\hat{\mathbf{n}}\cdot\mathbf{r}-\beta_0}}.
+$$
 
 One final modification is that we need to allow for the width of the turn on region to be adjusted. This means that we should allow the normal vector for the plane to be of any length, giving the usual form for the logistic function:
 
-\\[h(\beta_i,x_i) = \frac{1}{1+e^{-\beta_0-\beta_i x_i}},\\]
+$$
+h(\beta_i,x_i) = \frac{1}{1+e^{-\beta_0-\beta_i x_i}},
+$$
 
 with Einstein summation over the spatial indices $i$.
 

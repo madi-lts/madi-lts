@@ -15,7 +15,7 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
     <>
       <Script type="text/javascript" id="MathJax-config" src='@lib/mathjax-config.js'/>
       <Script type="text/javascript" id="MathJax-code" src={CDN}/>
-      <article className="post">
+      <article className="post font-[family-name:var(--font-lora)] italic">
         <h1>{postData.title}</h1>
         <h2>{new Date(postData.date).toLocaleDateString(
           'en-US', {month: 'long', day: 'numeric', year: 'numeric' })}</h2>
