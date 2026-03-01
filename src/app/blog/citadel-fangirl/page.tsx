@@ -126,7 +126,9 @@ const CITADEL_STYLES = `
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
+.citadel-root .match-name:hover { opacity: 0.7; }
 .citadel-root .match-category {
   font-size: 10px;
   color: #57534e;
@@ -139,7 +141,11 @@ const CITADEL_STYLES = `
   font-size: 13px;
   color: #78716c;
   margin-top: 6px;
+  cursor: pointer;
 }
+.citadel-root .match-hex:hover { opacity: 0.7; }
+.citadel-root #matchHex2 { cursor: pointer; }
+.citadel-root #matchHex2:hover { opacity: 0.7; }
 .citadel-root .match-delta {
   font-size: 10px;
   color: #44403c;
@@ -526,6 +532,30 @@ export default function CitadelFangirlPage() {
     drawSlider()
     updateDisplay()
 
+    function copyText(el: HTMLElement) {
+      const text = el.textContent?.trim() ?? ''
+      if (!text || text === '—') return
+      navigator.clipboard.writeText(text).then(() => {
+        const orig = el.textContent
+        el.textContent = 'Copied!'
+        setTimeout(() => {
+          if (el.textContent === 'Copied!') el.textContent = orig
+        }, 800)
+      })
+    }
+
+    const matchNameEl = document.getElementById('matchName') as HTMLElement
+    const matchHexEl  = document.getElementById('matchHex')  as HTMLElement
+    const matchHex2El = document.getElementById('matchHex2') as HTMLElement
+
+    const onNameClick  = () => copyText(matchNameEl)
+    const onHexClick   = () => copyText(matchHexEl)
+    const onHex2Click  = () => copyText(matchHex2El)
+
+    matchNameEl.addEventListener('click',  onNameClick)
+    matchHexEl.addEventListener('click',   onHexClick)
+    matchHex2El.addEventListener('click',  onHex2Click)
+
     return () => {
       window.removeEventListener('mousemove', handleMouseMove as EventListener)
       window.removeEventListener('touchmove', handleTouchMove as EventListener)
@@ -538,6 +568,9 @@ export default function CitadelFangirlPage() {
       sliderCanvas.removeEventListener('mousedown',  sliderDown as EventListener)
       sliderCanvas.removeEventListener('touchstart', sliderDown as EventListener)
       catSelect.removeEventListener('change', onCatChange)
+      matchNameEl.removeEventListener('click',  onNameClick)
+      matchHexEl.removeEventListener('click',   onHexClick)
+      matchHex2El.removeEventListener('click',  onHex2Click)
     }
   }, [])
 
@@ -588,15 +621,15 @@ export default function CitadelFangirlPage() {
             <div className="swatch-hex" id="selHex">#000000</div>
           </div>
           <div className="match-col">
-            <div className="match-name" id="matchName">—</div>
+            <div className="match-name" id="matchName" title="Click to copy name">—</div>
             <div className="match-category" id="matchCat" />
-            <div className="match-hex" id="matchHex" />
+            <div className="match-hex" id="matchHex" title="Click to copy hex" />
             <div className="match-delta" id="matchDelta" />
           </div>
           <div className="swatch-col">
             <div className="swatch" id="matchSwatch" />
             <div className="swatch-label">Closest</div>
-            <div className="swatch-hex" id="matchHex2" />
+            <div className="swatch-hex" id="matchHex2" title="Click to copy hex" />
           </div>
         </div>
       </div>
