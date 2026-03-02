@@ -14,7 +14,7 @@ $$
 U_i(\vec{r}_i) = \frac{1}{2}m(\omega_x^2x_i^2 + \omega_y^2y_i^2 + \omega_z^2z_i^2)
 $$
 
-And the potential energy of the electrostatic interaction between the $i$th and $j$th ions is
+We assume that the ions are weakly confined along the trap axis, so that $\omega_x \ll \omega_y, \omega_z$. The potential energy of the electrostatic interaction between the $i$th and $j$th ions is
 
 $$
 V_{ij}(|\vec{r}_i-\vec{r}_j|) = k_{e}e^2\frac{1}{|\vec{r}_i-\vec{r}_j|}
@@ -26,4 +26,21 @@ $$
 \sum_i U_i(\vec{r}_i) + k_ee^2\sum_{i<j}\frac{1}{|\vec{r}_i-\vec{r}_j|}
 $$
 
- Taylor expanding $1/|\vec{r}_i-\vec{r}_j|$ about the equilibrium point we define the difference between the $i$th and $j$th equilibrium positions as $|\vec{r}_{0,i} - \vec{r}_{0,j}| \equiv r_{ij}$.
+ To Taylor expand $1/|\vec{r}_i-\vec{r}_j|$ about the equilibrium point we define the difference between the $i$th and $j$th equilibrium positions as as $d_{ij}$ and note that this vector lies pureply along the trap axis: $\vec{r}_{0,i} - \vec{r}_{0,j} \equiv d_{ij}\,\hat{\mathbf{x}}$. We also define the difference between deviations from equilbrium positions $\vec{r}_{ij} = \vec{r}_i - \vec{r}_j$.
+
+ $$
+\frac{1}{|\vec{r}_i-\vec{r}_j|} = \left((d_{ij}\,\hat{\mathbf{x}} + \vec{r}_{ij})^2\right)^{-1/2} = \left(d_{ij}^2 + 2d_{ij}(x_i-x_j) + r_{ij}^2 \right)^{-1/2}.
+ $$
+
+ Then 
+
+ $$
+ \begin{align}
+\frac{1}{|\vec{r}_i-\vec{r}_j|} &= d_{ij}^{-1}(1 + 2(x_i-x_j)/d_{ij} + r_{ij}^2/d_{ij}^2)^{-1/2} \\
+&= d_{ij}^{-1}(1 - (x_i-x_j)/d_{ij} - r_{ij}^2/2d_{ij}^2 + \cdots)
+\end{align}
+ $$
+
+ The constant term we can ignore. The linear term shifts both the $i$th and $j$th ion's equilibrium positions. And the $r_{ij}^2$ term gives both a motional coupling term proportional to $x_ix_j$ as well as quadratic terms proportional to $x_i^2$ and $x_j^2$ which shift the $x$ motional mode frequencies for ions $i$ and $j$. 
+
+ ## Equilibium 

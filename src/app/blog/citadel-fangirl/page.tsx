@@ -9,7 +9,7 @@ type CitadelData = {
   }>
 }
 
-const CITADEL_DATA: CitadelData = {"categories":{"Base":{"description":"High-pigment paints designed for solid coverage in one or two coats. The starting point for most painting schemes.","paints":{"#231F20":"Abaddon Black","#F4A500":"Averland Sunset","#7A5C2E":"Balthasar Gold","#7D4C3C":"Bugman's Glow","#0D2219":"Caliban Green","#2E4A22":"Castellan Green","#8BA8A0":"Celestra Grey","#E8E8E8":"Corax White","#7A7B4A":"Death Guard Green","#3D2B1C":"Dryad Bark","#C0BCB5":"Grey Seer","#0C3535":"Incubi Darkness","#6E8878":"Ionrach Skin","#122156":"Kantor Blue","#5C100C":"Khorne Red","#727272":"Leadbelcher","#1C3B6E":"Macragge Blue","#3D3F42":"Mechanicus Standard Grey","#8B1A1A":"Mephiston Red","#5E2C18":"Mournfang Brown","#351E4A":"Naggaroth Night","#988678":"Rakarth Flesh","#AE7C28":"Retributor Armour","#341208":"Rhinox Hide","#52697A":"Russ Grey","#7C2248":"Screamer Pink","#604E30":"Steel Legion Drab","#234822":"Waaagh! Flesh","#E8D8A8":"Wraithbone","#7E5E1C":"XV-88","#9A8848":"Zandri Dust"}},"Layer":{"description":"Thinner than Base paints, used to build highlights and fine detail over a base coat.","paints":{"#8C8C8C":"Administratum Grey","#264878":"Alaitoc Blue","#1A3882":"Altdorf Guard Blue","#C89838":"Auric Armour Gold","#7A5420":"Balor Brown","#8A7060":"Baneblade Brown","#C07840":"Bestigor Flesh","#B06848":"Bloodreaver Flesh","#C07858":"Cadian Fleshtone","#3A5898":"Calgar Blue","#8A4828":"Deathclaw Brown","#C898C8":"Dechala Lilac","#F0D840":"Dorn Yellow","#501818":"Doombull Brown","#607840":"Elysian Green","#E850A8":"Emperor's Children","#404848":"Eshin Grey","#C02018":"Evil Sunz Scarlet","#7898B8":"Fenrisian Grey","#E86020":"Fire Dragon Bright","#E8D818":"Flash Gitz Yellow","#E878B0":"Fulgrim Pink","#A0E098":"Gauss Blaster Green","#704888":"Genestealer Purple","#4870B8":"Hoeth Blue","#604878":"Hormagaunt Purple","#989898":"Ironbreaker","#206040":"Kabalite Green","#A89070":"Karak Stone","#D8A880":"Kislev Flesh","#C89040":"Liberator Gold","#C8C0A8":"Longbeard Grey","#406030":"Loren Forest","#4898D8":"Lothern Blue","#E8A088":"Lugganath Orange","#50C830":"Moot Green","#A8A8A0":"Necron Compound","#A8B858":"Nurgling Green","#888048":"Ogryn Camo","#C84888":"Pink Horror","#5A1878":"Phoenician Purple","#987840":"Runelord Brass","#D8C890":"Screaming Skull","#609848":"Skarsnik Green","#B89050":"Skullcrusher Brass","#988898":"Slaanesh Grey","#D84818":"Squig Orange","#D0D0D0":"Stormhost Silver","#4A7830":"Straken Green","#38A868":"Sybarite Green","#A08848":"Tallarn Sand","#C09030":"Tau Light Ochre","#3878C8":"Teclis Blue","#1A5880":"Thousand Sons Blue","#E86018":"Troll Slayer Orange","#783828":"Tuskgor Fur","#D0D8D0":"Ulthuan Grey","#C8A070":"Ungor Flesh","#C8A878":"Ushabti Bone","#602878":"Warlord Purple","#706880":"Warpfiend Grey","#408840":"Warpstone Glow","#F8F8F8":"White Scar","#D83018":"Wild Rider Red","#481868":"Xereus Purple","#E8C018":"Yriel Yellow","#C09848":"Zamesi Desert"}},"Shade":{"description":"Ink-like washes that flow into recesses to create natural shading and depth.","paints":{"#3D2010":"Agrax Earthshade","#3E2111":"Agrax Earthshade Gloss","#3D4820":"Athonian Camoshade","#1A4020":"Biel-Tan Green","#500020":"Carroburg Crimson","#C07800":"Casandora Yellow","#103028":"Coelia Greenshade","#101840":"Drakenhof Nightshade","#301040":"Druchii Violet","#A03000":"Fuegan Orange","#0F0F0F":"Nuln Oil","#101010":"Nuln Oil Gloss","#602818":"Reikland Fleshshade","#612919":"Reikland Fleshshade Gloss","#5A3800":"Seraphim Sepia"}},"Dry":{"description":"Crumbly, low-moisture paints designed specifically for drybrushing techniques to quickly add highlights and texture.","paints":{"#B03020":"Astorath Red","#D87098":"Changeling Pink","#786050":"Desolate Brown","#E0B8A0":"Eldar Flesh","#A8C0D0":"Etherium Blue","#E8E060":"Hexos Palesun","#C0B8A0":"Longbeard Grey","#C0A8C8":"Lucius Lilac","#F0F0F0":"Praxeti White","#C05818":"Ryza Rust","#B89040":"Sigmarite","#6888A8":"Stormfang","#786040":"Sylvaneth Bark","#C0A880":"Terminatus Stone","#D8C888":"Tyrant Skull","#A8A090":"Underhive Ash"}},"Contrast":{"description":"A single-coat paint that combines base colour, shade, and highlight. Designed for fast painting over a light primer such as Wraithbone or Grey Seer.","paints":{"#5080B0":"Aethermatic Blue","#9A7830":"Aggaros Dunes","#207860":"Akhelian Green","#D0D8D8":"Apothecary White","#D8A818":"Bad Moon Yellow","#1A1A28":"Black Templar","#A01818":"Blood Angels Red","#F0EEE8":"Contrast Medium","#1A4028":"Dark Angels Green","#A86040":"Darkoath Flesh","#701010":"Flesh Tearers Red","#C87848":"Fyreslayer Flesh","#603818":"Gore-grunta Fur","#607080":"Gryph-charger Grey","#C05820":"Gryph-hound Orange","#C09070":"Guilliman Flesh","#D89818":"Imperial Fist","#1A6050":"Kroxigor Scales","#0A2848":"Leviadon Blue","#601878":"Luxion Purple","#C03800":"Magmadroth Flame","#487840":"Mantis Warriors Green","#304820":"Militarum Green","#C89020":"Nazdreg Yellow","#608878":"Nighthaunt Gloom","#486030":"Ork Flesh","#788050":"Plaguebearer Flesh","#482060":"Shyish Purple","#B09040":"Skeleton Horde","#786030":"Snakebite Leather","#587898":"Space Wolves Grey","#1A3878":"Talassar Blue","#207868":"Terradon Turquoise","#1A3888":"Ultramarines Blue","#901848":"Volupus Pink","#309020":"Warp Lightning","#3A2818":"Wyldwood"}},"Technical":{"description":"Specialty effect paints including texture paints for basing, atmospheric effects, and unique finishes.","paints":{"#7A5A38":"Agrellan Badland","#6A4828":"Agrellan Earth","#F8F8F8":"Ard Coat","#A89060":"Armageddon Dust","#C0A870":"Armageddon Dunes","#606060":"Astrogranite","#485050":"Astrogranite Debris","#7A0000":"Blood for the Blood God","#F0EEE8":"Contrast Medium","#1848A0":"Gemstone: Soulstone Blue","#A01828":"Gemstone: Spiritstone Red","#109840":"Gemstone: Waystone Green","#F5F5F0":"Lahmian Medium","#6A2818":"Martian Ironcrust","#581808":"Martian Ironearth","#201808":"Mordant Earth","#70A898":"Nihilakh Oxide","#688030":"Nurgle's Rot","#4A3820":"Stirland Battlemire","#5A4828":"Stirland Mud","#00A8A8":"Tesseract Glow","#302808":"Typhus Corrosion","#E0E8F0":"Valhallan Blizzard"}},"Air":{"description":"Pre-thinned paints formulated for use with an airbrush. Covers many of the same colours as the Base and Layer ranges.","paints":{"#231F20":"Abaddon Black Air","#F4A500":"Averland Sunset Air","#7A5C2E":"Balthasar Gold Air","#0D2219":"Caliban Green Air","#2E4A22":"Castellan Green Air","#8BA8A0":"Celestra Grey Air","#E8E8E8":"Corax White Air","#7A7B4A":"Death Guard Green Air","#C02018":"Evil Sunz Scarlet Air","#C0BCB5":"Grey Seer Air","#989898":"Ironbreaker Air","#122156":"Kantor Blue Air","#5C100C":"Khorne Red Air","#727272":"Leadbelcher Air","#1C3B6E":"Macragge Blue Air","#3D3F42":"Mechanicus Standard Grey Air","#8B1A1A":"Mephiston Red Air","#5E2C18":"Mournfang Brown Air","#351E4A":"Naggaroth Night Air","#AE7C28":"Retributor Armour Air","#7C2248":"Screamer Pink Air","#D0D0D0":"Stormhost Silver Air","#1A5880":"Thousand Sons Blue Air","#234822":"Waaagh! Flesh Air","#E8D8A8":"Wraithbone Air","#9A8848":"Zandri Dust Air"}}}}
+const CITADEL_DATA: CitadelData = { "categories": { "Base": { "description": "High-pigment paints designed for solid coverage in one or two coats. The starting point for most painting schemes.", "paints": { "#231F20": "Abaddon Black", "#F4A500": "Averland Sunset", "#7A5C2E": "Balthasar Gold", "#7D4C3C": "Bugman's Glow", "#0D2219": "Caliban Green", "#2E4A22": "Castellan Green", "#8BA8A0": "Celestra Grey", "#E8E8E8": "Corax White", "#7A7B4A": "Death Guard Green", "#3D2B1C": "Dryad Bark", "#C0BCB5": "Grey Seer", "#0C3535": "Incubi Darkness", "#6E8878": "Ionrach Skin", "#122156": "Kantor Blue", "#5C100C": "Khorne Red", "#727272": "Leadbelcher", "#1C3B6E": "Macragge Blue", "#3D3F42": "Mechanicus Standard Grey", "#8B1A1A": "Mephiston Red", "#5E2C18": "Mournfang Brown", "#351E4A": "Naggaroth Night", "#988678": "Rakarth Flesh", "#AE7C28": "Retributor Armour", "#341208": "Rhinox Hide", "#52697A": "Russ Grey", "#7C2248": "Screamer Pink", "#604E30": "Steel Legion Drab", "#234822": "Waaagh! Flesh", "#E8D8A8": "Wraithbone", "#7E5E1C": "XV-88", "#9A8848": "Zandri Dust" } }, "Layer": { "description": "Thinner than Base paints, used to build highlights and fine detail over a base coat.", "paints": { "#8C8C8C": "Administratum Grey", "#264878": "Alaitoc Blue", "#1A3882": "Altdorf Guard Blue", "#C89838": "Auric Armour Gold", "#7A5420": "Balor Brown", "#8A7060": "Baneblade Brown", "#C07840": "Bestigor Flesh", "#B06848": "Bloodreaver Flesh", "#C07858": "Cadian Fleshtone", "#3A5898": "Calgar Blue", "#8A4828": "Deathclaw Brown", "#C898C8": "Dechala Lilac", "#F0D840": "Dorn Yellow", "#501818": "Doombull Brown", "#607840": "Elysian Green", "#E850A8": "Emperor's Children", "#404848": "Eshin Grey", "#C02018": "Evil Sunz Scarlet", "#7898B8": "Fenrisian Grey", "#E86020": "Fire Dragon Bright", "#E8D818": "Flash Gitz Yellow", "#E878B0": "Fulgrim Pink", "#A0E098": "Gauss Blaster Green", "#704888": "Genestealer Purple", "#4870B8": "Hoeth Blue", "#604878": "Hormagaunt Purple", "#989898": "Ironbreaker", "#206040": "Kabalite Green", "#A89070": "Karak Stone", "#D8A880": "Kislev Flesh", "#C89040": "Liberator Gold", "#C8C0A8": "Longbeard Grey", "#406030": "Loren Forest", "#4898D8": "Lothern Blue", "#E8A088": "Lugganath Orange", "#50C830": "Moot Green", "#A8A8A0": "Necron Compound", "#A8B858": "Nurgling Green", "#888048": "Ogryn Camo", "#C84888": "Pink Horror", "#5A1878": "Phoenician Purple", "#987840": "Runelord Brass", "#D8C890": "Screaming Skull", "#609848": "Skarsnik Green", "#B89050": "Skullcrusher Brass", "#988898": "Slaanesh Grey", "#D84818": "Squig Orange", "#D0D0D0": "Stormhost Silver", "#4A7830": "Straken Green", "#38A868": "Sybarite Green", "#A08848": "Tallarn Sand", "#C09030": "Tau Light Ochre", "#3878C8": "Teclis Blue", "#1A5880": "Thousand Sons Blue", "#E86018": "Troll Slayer Orange", "#783828": "Tuskgor Fur", "#D0D8D0": "Ulthuan Grey", "#C8A070": "Ungor Flesh", "#C8A878": "Ushabti Bone", "#602878": "Warlord Purple", "#706880": "Warpfiend Grey", "#408840": "Warpstone Glow", "#F8F8F8": "White Scar", "#D83018": "Wild Rider Red", "#481868": "Xereus Purple", "#E8C018": "Yriel Yellow", "#C09848": "Zamesi Desert" } }, "Shade": { "description": "Ink-like washes that flow into recesses to create natural shading and depth.", "paints": { "#3D2010": "Agrax Earthshade", "#3E2111": "Agrax Earthshade Gloss", "#3D4820": "Athonian Camoshade", "#1A4020": "Biel-Tan Green", "#500020": "Carroburg Crimson", "#C07800": "Casandora Yellow", "#103028": "Coelia Greenshade", "#101840": "Drakenhof Nightshade", "#301040": "Druchii Violet", "#A03000": "Fuegan Orange", "#0F0F0F": "Nuln Oil", "#101010": "Nuln Oil Gloss", "#602818": "Reikland Fleshshade", "#612919": "Reikland Fleshshade Gloss", "#5A3800": "Seraphim Sepia" } }, "Dry": { "description": "Crumbly, low-moisture paints designed specifically for drybrushing techniques to quickly add highlights and texture.", "paints": { "#B03020": "Astorath Red", "#D87098": "Changeling Pink", "#786050": "Desolate Brown", "#E0B8A0": "Eldar Flesh", "#A8C0D0": "Etherium Blue", "#E8E060": "Hexos Palesun", "#C0B8A0": "Longbeard Grey", "#C0A8C8": "Lucius Lilac", "#F0F0F0": "Praxeti White", "#C05818": "Ryza Rust", "#B89040": "Sigmarite", "#6888A8": "Stormfang", "#786040": "Sylvaneth Bark", "#C0A880": "Terminatus Stone", "#D8C888": "Tyrant Skull", "#A8A090": "Underhive Ash" } }, "Contrast": { "description": "A single-coat paint that combines base colour, shade, and highlight. Designed for fast painting over a light primer such as Wraithbone or Grey Seer.", "paints": { "#5080B0": "Aethermatic Blue", "#9A7830": "Aggaros Dunes", "#207860": "Akhelian Green", "#D0D8D8": "Apothecary White", "#D8A818": "Bad Moon Yellow", "#1A1A28": "Black Templar", "#A01818": "Blood Angels Red", "#F0EEE8": "Contrast Medium", "#1A4028": "Dark Angels Green", "#A86040": "Darkoath Flesh", "#701010": "Flesh Tearers Red", "#C87848": "Fyreslayer Flesh", "#603818": "Gore-grunta Fur", "#607080": "Gryph-charger Grey", "#C05820": "Gryph-hound Orange", "#C09070": "Guilliman Flesh", "#D89818": "Imperial Fist", "#1A6050": "Kroxigor Scales", "#0A2848": "Leviadon Blue", "#601878": "Luxion Purple", "#C03800": "Magmadroth Flame", "#487840": "Mantis Warriors Green", "#304820": "Militarum Green", "#C89020": "Nazdreg Yellow", "#608878": "Nighthaunt Gloom", "#486030": "Ork Flesh", "#788050": "Plaguebearer Flesh", "#482060": "Shyish Purple", "#B09040": "Skeleton Horde", "#786030": "Snakebite Leather", "#587898": "Space Wolves Grey", "#1A3878": "Talassar Blue", "#207868": "Terradon Turquoise", "#1A3888": "Ultramarines Blue", "#901848": "Volupus Pink", "#309020": "Warp Lightning", "#3A2818": "Wyldwood" } }, "Technical": { "description": "Specialty effect paints including texture paints for basing, atmospheric effects, and unique finishes.", "paints": { "#7A5A38": "Agrellan Badland", "#6A4828": "Agrellan Earth", "#F8F8F8": "Ard Coat", "#A89060": "Armageddon Dust", "#C0A870": "Armageddon Dunes", "#606060": "Astrogranite", "#485050": "Astrogranite Debris", "#7A0000": "Blood for the Blood God", "#F0EEE8": "Contrast Medium", "#1848A0": "Gemstone: Soulstone Blue", "#A01828": "Gemstone: Spiritstone Red", "#109840": "Gemstone: Waystone Green", "#F5F5F0": "Lahmian Medium", "#6A2818": "Martian Ironcrust", "#581808": "Martian Ironearth", "#201808": "Mordant Earth", "#70A898": "Nihilakh Oxide", "#688030": "Nurgle's Rot", "#4A3820": "Stirland Battlemire", "#5A4828": "Stirland Mud", "#00A8A8": "Tesseract Glow", "#302808": "Typhus Corrosion", "#E0E8F0": "Valhallan Blizzard" } }, "Air": { "description": "Pre-thinned paints formulated for use with an airbrush. Covers many of the same colours as the Base and Layer ranges.", "paints": { "#231F20": "Abaddon Black Air", "#F4A500": "Averland Sunset Air", "#7A5C2E": "Balthasar Gold Air", "#0D2219": "Caliban Green Air", "#2E4A22": "Castellan Green Air", "#8BA8A0": "Celestra Grey Air", "#E8E8E8": "Corax White Air", "#7A7B4A": "Death Guard Green Air", "#C02018": "Evil Sunz Scarlet Air", "#C0BCB5": "Grey Seer Air", "#989898": "Ironbreaker Air", "#122156": "Kantor Blue Air", "#5C100C": "Khorne Red Air", "#727272": "Leadbelcher Air", "#1C3B6E": "Macragge Blue Air", "#3D3F42": "Mechanicus Standard Grey Air", "#8B1A1A": "Mephiston Red Air", "#5E2C18": "Mournfang Brown Air", "#351E4A": "Naggaroth Night Air", "#AE7C28": "Retributor Armour Air", "#7C2248": "Screamer Pink Air", "#D0D0D0": "Stormhost Silver Air", "#1A5880": "Thousand Sons Blue Air", "#234822": "Waaagh! Flesh Air", "#E8D8A8": "Wraithbone Air", "#9A8848": "Zandri Dust Air" } } } }
 
 const CITADEL_STYLES = `
 .citadel-root * { box-sizing: border-box; }
@@ -151,6 +151,28 @@ const CITADEL_STYLES = `
   color: #44403c;
   margin-top: 3px;
 }
+.citadel-root .img-upload-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.citadel-root .img-upload-btn {
+  padding: 7px 14px;
+  background: #292524;
+  color: #a8a29e;
+  border: 1px solid #44403c;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+}
+.citadel-root .img-upload-btn:hover { color: #fafaf9; }
+.citadel-root #imgUpload { display: none; }
+.citadel-root .img-hint {
+  font-size: 12px;
+  color: #57534e;
+}
 `
 
 export default function CitadelFangirlPage() {
@@ -161,6 +183,20 @@ export default function CitadelFangirlPage() {
     const TRI_R = 168
     const DISC_R = 238
 
+    function rgbToHsv(r: number, g: number, b: number): [number, number, number] {
+      r /= 255; g /= 255; b /= 255
+      const max = Math.max(r, g, b), min = Math.min(r, g, b), d = max - min
+      const v = max
+      const s = max === 0 ? 0 : d / max
+      let h = 0
+      if (d !== 0) {
+        if (max === r) h = ((g - b) / d + (g < b ? 6 : 0)) * 60
+        else if (max === g) h = ((b - r) / d + 2) * 60
+        else h = ((r - g) / d + 4) * 60
+      }
+      return [h, s, v]
+    }
+
     function hsvToRgb(h: number, s: number, v: number): [number, number, number] {
       h = ((h % 360) + 360) % 360
       const i = Math.floor(h / 60)
@@ -168,7 +204,7 @@ export default function CitadelFangirlPage() {
       const p = v * (1 - s)
       const q = v * (1 - f * s)
       const t = v * (1 - (1 - f) * s)
-      const table: [number, number, number][] = [[v,t,p],[q,v,p],[p,v,t],[p,q,v],[t,p,v],[v,p,q]]
+      const table: [number, number, number][] = [[v, t, p], [q, v, p], [p, v, t], [p, q, v], [t, p, v], [v, p, q]]
       const [r, g, b] = table[i]
       return [r * 255, g * 255, b * 255]
     }
@@ -203,7 +239,7 @@ export default function CitadelFangirlPage() {
     }
 
     function deltaE(a: [number, number, number], b: [number, number, number]): number {
-      return Math.sqrt((a[0]-b[0])**2 + (a[1]-b[1])**2 + (a[2]-b[2])**2)
+      return Math.sqrt((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2 + (a[2] - b[2]) ** 2)
     }
 
     interface Paint {
@@ -287,9 +323,9 @@ export default function CitadelFangirlPage() {
 
     function bary(
       px: number, py: number,
-      v0: {x: number, y: number},
-      v1: {x: number, y: number},
-      v2: {x: number, y: number}
+      v0: { x: number, y: number },
+      v1: { x: number, y: number },
+      v2: { x: number, y: number }
     ): [number, number, number] {
       const d = (v1.y - v2.y) * (v0.x - v2.x) + (v2.x - v1.x) * (v0.y - v2.y)
       const a = ((v1.y - v2.y) * (px - v2.x) + (v2.x - v1.x) * (py - v2.y)) / d
@@ -306,7 +342,7 @@ export default function CitadelFangirlPage() {
     function triVerts() {
       const rad = state.h * Math.PI / 180
       return [
-        { x: CX + TRI_R * Math.cos(rad),                   y: CY + TRI_R * Math.sin(rad) },
+        { x: CX + TRI_R * Math.cos(rad), y: CY + TRI_R * Math.sin(rad) },
         { x: CX + TRI_R * Math.cos(rad + 2 * Math.PI / 3), y: CY + TRI_R * Math.sin(rad + 2 * Math.PI / 3) },
         { x: CX + TRI_R * Math.cos(rad + 4 * Math.PI / 3), y: CY + TRI_R * Math.sin(rad + 4 * Math.PI / 3) },
       ]
@@ -331,14 +367,14 @@ export default function CitadelFangirlPage() {
           if (dist >= RING_I && dist <= RING_O) {
             const hue = (Math.atan2(dy, dx) * 180 / Math.PI + 360) % 360
             const [r, g, b] = hsvToRgb(hue, 1, 1)
-            d[i] = r; d[i+1] = g; d[i+2] = b; d[i+3] = 255
+            d[i] = r; d[i + 1] = g; d[i + 2] = b; d[i + 3] = 255
           } else if (x >= tX0 && x <= tX1 && y >= tY0 && y <= tY1) {
             const [a, b, c] = bary(x, y, v0, v1, v2)
             if (a >= -0.001 && b >= -0.001 && c >= -0.001) {
-              d[i]   = a * hr + b * 255
-              d[i+1] = a * hg + b * 255
-              d[i+2] = a * hb + b * 255
-              d[i+3] = 255
+              d[i] = a * hr + b * 255
+              d[i + 1] = a * hg + b * 255
+              d[i + 2] = a * hb + b * 255
+              d[i + 3] = 255
             }
           }
         }
@@ -370,7 +406,7 @@ export default function CitadelFangirlPage() {
             const sat = dist / DISC_R
             const [r, g, b] = hsvToRgb(hue, sat, state.v)
             const i = (y * CW + x) * 4
-            d[i] = r; d[i+1] = g; d[i+2] = b; d[i+3] = 255
+            d[i] = r; d[i + 1] = g; d[i + 2] = b; d[i + 3] = 255
           }
         }
       }
@@ -412,7 +448,7 @@ export default function CitadelFangirlPage() {
         : (e as MouseEvent)
       return [
         (cl.clientX - r.left) * (canvas.width / r.width),
-        (cl.clientY - r.top)  * (canvas.height / r.height),
+        (cl.clientY - r.top) * (canvas.height / r.height),
       ]
     }
 
@@ -421,7 +457,7 @@ export default function CitadelFangirlPage() {
     function wheelDown(e: MouseEvent | TouchEvent) {
       const canvas = document.getElementById('wheelCanvas') as HTMLCanvasElement
       const [x, y] = canvasXY(canvas, e)
-      const dx = x - CX, dy = y - CY, dist = Math.sqrt(dx*dx + dy*dy)
+      const dx = x - CX, dy = y - CY, dist = Math.sqrt(dx * dx + dy * dy)
       if (dist >= RING_I - 10 && dist <= RING_O + 10) {
         wheelDrag = 'ring'
       } else if (dist < RING_I) {
@@ -454,6 +490,42 @@ export default function CitadelFangirlPage() {
     }
 
     let discDrag: string | null = null
+    let imgDrag = false
+    let currentImg: HTMLImageElement | null = null
+    let imgX = 254, imgY = 254
+
+    function drawImagePicker() {
+      const canvas = document.getElementById('imageCanvas') as HTMLCanvasElement
+      const ctx = canvas.getContext('2d')!
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      if (!currentImg) {
+        ctx.fillStyle = '#292524'
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
+        ctx.fillStyle = '#57534e'
+        ctx.font = '14px system-ui, sans-serif'
+        ctx.textAlign = 'center'
+        ctx.fillText('Upload an image to pick colours', canvas.width / 2, canvas.height / 2)
+        ctx.textAlign = 'left'
+        return
+      }
+      const scale = Math.min(canvas.width / currentImg.naturalWidth, canvas.height / currentImg.naturalHeight)
+      const iw = currentImg.naturalWidth * scale
+      const ih = currentImg.naturalHeight * scale
+      const ox = (canvas.width - iw) / 2
+      const oy = (canvas.height - ih) / 2
+      ctx.drawImage(currentImg, ox, oy, iw, ih)
+      drawHandle(ctx, imgX, imgY, 11)
+    }
+
+    function imagePickerApply(x: number, y: number) {
+      const canvas = document.getElementById('imageCanvas') as HTMLCanvasElement
+      imgX = Math.max(0, Math.min(canvas.width - 1, x))
+      imgY = Math.max(0, Math.min(canvas.height - 1, y))
+      const ctx = canvas.getContext('2d')!
+      const px = ctx.getImageData(Math.round(imgX), Math.round(imgY), 1, 1).data
+      const [h, s, v] = rgbToHsv(px[0], px[1], px[2])
+      state.h = h; state.s = s; state.v = v
+    }
 
     function discDown(e: MouseEvent | TouchEvent) {
       discDrag = 'disc'
@@ -487,33 +559,81 @@ export default function CitadelFangirlPage() {
     function discApply(x: number, y: number) {
       const dx = x - CX, dy = y - CY
       state.h = (Math.atan2(dy, dx) * 180 / Math.PI + 360) % 360
-      state.s = Math.max(0, Math.min(1, Math.sqrt(dx*dx + dy*dy) / DISC_R))
+      state.s = Math.max(0, Math.min(1, Math.sqrt(dx * dx + dy * dy) / DISC_R))
     }
 
     function sliderApply(x: number) {
       state.v = Math.max(0, Math.min(1, x / (document.getElementById('sliderCanvas') as HTMLCanvasElement).width))
     }
 
-    const wheelCanvas  = document.getElementById('wheelCanvas')  as HTMLCanvasElement
-    const discCanvas   = document.getElementById('discCanvas')   as HTMLCanvasElement
+    function imgDown(e: MouseEvent | TouchEvent) {
+      if (!currentImg) return
+      imgDrag = true
+      const [x, y] = canvasXY(document.getElementById('imageCanvas') as HTMLCanvasElement, e)
+      imagePickerApply(x, y)
+      drawImagePicker()
+      updateDisplay()
+      e.preventDefault()
+    }
+
+    function imgMove(e: MouseEvent | TouchEvent) {
+      if (!imgDrag || !currentImg) return
+      const [x, y] = canvasXY(document.getElementById('imageCanvas') as HTMLCanvasElement, e)
+      imagePickerApply(x, y)
+      drawImagePicker()
+      updateDisplay()
+      e.preventDefault()
+    }
+
+    const wheelCanvas = document.getElementById('wheelCanvas') as HTMLCanvasElement
+    const discCanvas = document.getElementById('discCanvas') as HTMLCanvasElement
     const sliderCanvas = document.getElementById('sliderCanvas') as HTMLCanvasElement
+    const imageCanvas = document.getElementById('imageCanvas') as HTMLCanvasElement
 
-    wheelCanvas.addEventListener('mousedown',  wheelDown as EventListener)
+    wheelCanvas.addEventListener('mousedown', wheelDown as EventListener)
     wheelCanvas.addEventListener('touchstart', wheelDown as EventListener, { passive: false })
-    discCanvas.addEventListener('mousedown',   discDown  as EventListener)
-    discCanvas.addEventListener('touchstart',  discDown  as EventListener, { passive: false })
-    sliderCanvas.addEventListener('mousedown',  sliderDown as EventListener)
+    discCanvas.addEventListener('mousedown', discDown as EventListener)
+    discCanvas.addEventListener('touchstart', discDown as EventListener, { passive: false })
+    sliderCanvas.addEventListener('mousedown', sliderDown as EventListener)
     sliderCanvas.addEventListener('touchstart', sliderDown as EventListener, { passive: false })
+    imageCanvas.addEventListener('mousedown', imgDown as EventListener)
+    imageCanvas.addEventListener('touchstart', imgDown as EventListener, { passive: false })
 
-    const handleMouseMove = (e: MouseEvent) => { wheelMove(e); discMove(e) }
-    const handleTouchMove = (e: TouchEvent) => { wheelMove(e); discMove(e) }
-    const handleMouseUp   = () => { wheelDrag = null; discDrag = null }
-    const handleTouchEnd  = () => { wheelDrag = null; discDrag = null }
+    const handleMouseMove = (e: MouseEvent) => { wheelMove(e); discMove(e); imgMove(e) }
+    const handleTouchMove = (e: TouchEvent) => { wheelMove(e); discMove(e); imgMove(e) }
+    const handleMouseUp = () => { wheelDrag = null; discDrag = null; imgDrag = false }
+    const handleTouchEnd = () => { wheelDrag = null; discDrag = null; imgDrag = false }
 
     window.addEventListener('mousemove', handleMouseMove as EventListener)
     window.addEventListener('touchmove', handleTouchMove as EventListener, { passive: false })
-    window.addEventListener('mouseup',   handleMouseUp)
-    window.addEventListener('touchend',  handleTouchEnd)
+    window.addEventListener('mouseup', handleMouseUp)
+    window.addEventListener('touchend', handleTouchEnd)
+
+    const imgUploadBtn = document.getElementById('imgUploadBtn') as HTMLButtonElement
+    const imgUploadInput = document.getElementById('imgUpload') as HTMLInputElement
+
+    const onImgUploadBtnClick = () => imgUploadInput.click()
+    const onImgUpload = (e: Event) => {
+      const file = (e.target as HTMLInputElement).files?.[0]
+      if (!file) return
+      const reader = new FileReader()
+      reader.onload = (ev) => {
+        const img = new Image()
+        img.onload = () => {
+          currentImg = img
+          imgX = 254; imgY = 254
+          drawImagePicker()
+          imagePickerApply(imgX, imgY)
+          updateDisplay()
+          document.getElementById('imgHint')!.textContent = file.name
+        }
+        img.src = ev.target!.result as string
+      }
+      reader.readAsDataURL(file)
+    }
+
+    imgUploadBtn.addEventListener('click', onImgUploadBtnClick)
+    imgUploadInput.addEventListener('change', onImgUpload)
 
     document.querySelectorAll('.citadel-root .tab-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -523,13 +643,15 @@ export default function CitadelFangirlPage() {
         const tab = (btn as HTMLElement).dataset.tab!
         document.getElementById(tab + '-panel')!.classList.add('active')
         if (tab === 'wheel') drawWheel()
-        else { drawDisc(); drawSlider() }
+        else if (tab === 'disc') { drawDisc(); drawSlider() }
+        else drawImagePicker()
       })
     })
 
     drawWheel()
     drawDisc()
     drawSlider()
+    drawImagePicker()
     updateDisplay()
 
     function copyText(el: HTMLElement) {
@@ -545,32 +667,36 @@ export default function CitadelFangirlPage() {
     }
 
     const matchNameEl = document.getElementById('matchName') as HTMLElement
-    const matchHexEl  = document.getElementById('matchHex')  as HTMLElement
+    const matchHexEl = document.getElementById('matchHex') as HTMLElement
     const matchHex2El = document.getElementById('matchHex2') as HTMLElement
 
-    const onNameClick  = () => copyText(matchNameEl)
-    const onHexClick   = () => copyText(matchHexEl)
-    const onHex2Click  = () => copyText(matchHex2El)
+    const onNameClick = () => copyText(matchNameEl)
+    const onHexClick = () => copyText(matchHexEl)
+    const onHex2Click = () => copyText(matchHex2El)
 
-    matchNameEl.addEventListener('click',  onNameClick)
-    matchHexEl.addEventListener('click',   onHexClick)
-    matchHex2El.addEventListener('click',  onHex2Click)
+    matchNameEl.addEventListener('click', onNameClick)
+    matchHexEl.addEventListener('click', onHexClick)
+    matchHex2El.addEventListener('click', onHex2Click)
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove as EventListener)
       window.removeEventListener('touchmove', handleTouchMove as EventListener)
-      window.removeEventListener('mouseup',   handleMouseUp)
-      window.removeEventListener('touchend',  handleTouchEnd)
-      wheelCanvas.removeEventListener('mousedown',  wheelDown as EventListener)
+      window.removeEventListener('mouseup', handleMouseUp)
+      window.removeEventListener('touchend', handleTouchEnd)
+      wheelCanvas.removeEventListener('mousedown', wheelDown as EventListener)
       wheelCanvas.removeEventListener('touchstart', wheelDown as EventListener)
-      discCanvas.removeEventListener('mousedown',   discDown  as EventListener)
-      discCanvas.removeEventListener('touchstart',  discDown  as EventListener)
-      sliderCanvas.removeEventListener('mousedown',  sliderDown as EventListener)
+      discCanvas.removeEventListener('mousedown', discDown as EventListener)
+      discCanvas.removeEventListener('touchstart', discDown as EventListener)
+      sliderCanvas.removeEventListener('mousedown', sliderDown as EventListener)
       sliderCanvas.removeEventListener('touchstart', sliderDown as EventListener)
+      imageCanvas.removeEventListener('mousedown', imgDown as EventListener)
+      imageCanvas.removeEventListener('touchstart', imgDown as EventListener)
+      imgUploadBtn.removeEventListener('click', onImgUploadBtnClick)
+      imgUploadInput.removeEventListener('change', onImgUpload)
       catSelect.removeEventListener('change', onCatChange)
-      matchNameEl.removeEventListener('click',  onNameClick)
-      matchHexEl.removeEventListener('click',   onHexClick)
-      matchHex2El.removeEventListener('click',  onHex2Click)
+      matchNameEl.removeEventListener('click', onNameClick)
+      matchHexEl.removeEventListener('click', onHexClick)
+      matchHex2El.removeEventListener('click', onHex2Click)
     }
   }, [])
 
@@ -600,6 +726,7 @@ export default function CitadelFangirlPage() {
         <div className="tabs">
           <button className="tab-btn active" data-tab="wheel">Colour Wheel</button>
           <button className="tab-btn" data-tab="disc">Colour Disc</button>
+          <button className="tab-btn" data-tab="image">Image Picker</button>
         </div>
 
         <div className="picker-box">
@@ -611,6 +738,14 @@ export default function CitadelFangirlPage() {
             <div className="slider-wrap">
               <canvas id="sliderCanvas" width={508} height={30} />
             </div>
+          </div>
+          <div className="tab-panel" id="image-panel">
+            <div className="img-upload-row">
+              <input type="file" id="imgUpload" accept="image/*" />
+              <button className="img-upload-btn" id="imgUploadBtn">Upload Image</button>
+              <span className="img-hint" id="imgHint">No image loaded</span>
+            </div>
+            <canvas id="imageCanvas" width={508} height={508} />
           </div>
         </div>
 
